@@ -1,0 +1,16 @@
+<%# <p><%= @question%></p>
+<%# <p><%= @answer %></p>
+<%# <%= link_to "ask another question", ask_path %>
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title text-primary">Question</h2>
+      <p class="card-text bg-light p-3 rounded"><%= @question %></p>
+
+      <h2 class="card-title text-success mt-4">Answer</h2>
+      <p class="card-text bg-light p-3 rounded"><%= @answer %></p>
+
+      <%= link_to "Ask another question", ask_path, class: "btn btn-info mt-3" %>
+    </div>
+  </div>
+</div>
